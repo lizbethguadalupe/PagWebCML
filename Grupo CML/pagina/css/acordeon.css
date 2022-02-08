@@ -1,0 +1,47 @@
+@import 'reset/variables';
+
+
+.acordeon{
+	width: 70%;
+	max-width: 120em;
+    background: #fff;
+	margin: auto;
+	padding: 2px;
+	border-radius: 2%;
+}
+
+.acordeon .bloque{
+    background-color: #4BCCC7;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .6);
+    margin: 0 0 1em;
+    padding: 1em;
+	border-radius: 25px;
+}
+
+.acordeon .h2{
+	background-color: #f2f2f2;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .6);
+	margin: 0 0 .1em;
+	padding: 1em;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.acordeon .contenido{
+	background-color: #f2f5fc;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .6);
+	border-radius: 10px;
+	height: 0;
+	padding: 0;
+	font-weight: 300;
+	overflow: hidden;
+	transition: all .5s ease;
+}
+
+.acordeon .bloque.activo .contenido{
+	height: auto;
+	text-align: left;
+	margin: 1em 1em 1em;
+	padding: .5em;
+}
